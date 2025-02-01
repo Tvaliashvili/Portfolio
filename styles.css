@@ -43,15 +43,8 @@ body {
   width: 2rem;
 }
 
-.list {
-  text-decoration: none;
-  color: white;
-  transition: 0.5s;
-}
-
-.list:hover {
-  transition: 0.5s;
-  color: var(--color-primary);
+.list-container {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -71,6 +64,16 @@ body {
     width: 70%;
     display: flex;
     justify-content: space-evenly;
+  }
+  .list {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .list:hover {
+    transition: 0.5s;
+    color: var(--color-primary);
   }
 }
 
