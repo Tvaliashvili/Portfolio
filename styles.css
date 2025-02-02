@@ -160,6 +160,10 @@ body {
   .welcome-img {
     min-width: 50%;
   }
+
+  .welcome-text {
+    padding-left: 2rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
