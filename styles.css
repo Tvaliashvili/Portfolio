@@ -70,10 +70,21 @@ body {
     color: white;
     transition: 0.5s;
   }
-  
+
   .list:hover {
     transition: 0.5s;
     color: var(--color-primary);
+  }
+
+  .welcome-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-pic {
+    max-height: 50%;
+    max-width: 50%;
   }
 }
 
@@ -90,7 +101,7 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
-  .list-container{
+  .list-container {
     width: 50%;
   }
   .navbar-header {
@@ -134,10 +145,67 @@ body {
 .welcome-img {
   margin-top: 5rem;
   min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-pic {
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+}
+
+@media screen and (min-width:768px) {
+  .welcome-img {
+    min-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .welcome-box {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .introduction-text {
+    min-width: 50%;
+  }
+
+  .welcome-text {
+    padding-left: 4rem;
+  }
+
+  .welcome-img {
+    min-width: 50%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .profile-pic {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  #greeting {
+    font-size: 2.4rem;
+  }
+
+  #pc-vers-role {
+font-size: 3rem;
+  }
+
+.introduction-text {
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+.welcome-box {
+  line-height: 3rem;
+}
 }
