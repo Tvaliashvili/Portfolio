@@ -16,6 +16,8 @@ body {
 
 /* Navigation bar */
 .navbar-container {
+  position: sticky;
+  top:0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,16 +55,14 @@ button {
 }
 
 .collapsible-container-show {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
   display: flex;
   min-width: 100%;
   height: 23rem;
 }
 
 .collapsible-container-hide {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
   display: none;
   min-width: 100%;
   height: 23rem;
