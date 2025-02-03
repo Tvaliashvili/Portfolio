@@ -47,6 +47,11 @@ body {
   display: none;
 }
 
+button {
+  background-color: black;
+  border: 0;
+}
+
 .collapsible-container-show {
   position: absolute;
   z-index: 1;
