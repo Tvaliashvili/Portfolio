@@ -8,3 +8,9 @@ function showMenuNavBar() {
         collapsible.classList.add(`collapsible-container-hide`)
     }
 }
+
+function hideMenuNavBar() {
+    if(collapsible.classList.contains(`collapsible-container-show`)) {
+        collapsible.classList.replace(`collapsible-container-show`, `collapsible-container-hide`)
+    }
+}
