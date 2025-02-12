@@ -8,6 +8,7 @@
 html {
   font-size: 62.5%;
   font-family: roboto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,8 +17,11 @@ body {
 
 /* Navigation bar */
 .navbar-container {
+  border-bottom: solid 0.1rem white;
+  opacity: 0.8;
+  background-color: black;
   position: sticky;
-  top:0;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -195,7 +199,7 @@ button {
   border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .welcome-img {
     min-width: 50%;
   }
@@ -220,7 +224,7 @@ button {
 
   #pc-vers-role {
     font-size: 2.6rem;
-      }
+  }
 
   .introduction-text {
     font-size: 1.1rem;
@@ -244,21 +248,122 @@ button {
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   #greeting {
     font-size: 2.4rem;
   }
 
   #pc-vers-role {
-font-size: 3rem;
+    font-size: 3rem;
   }
 
-.introduction-text {
-  font-size: 1.3rem;
-  line-height: 3rem;
+  .introduction-text {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+
+  .welcome-box {
+    line-height: 3rem;
+  }
 }
 
-.welcome-box {
-  line-height: 3rem;
+/* About */
+.about_container {
+  padding: 0 1rem 0 1rem;
+  margin-top: 2rem;
+  min-width: 100%;
+  height: 30rem;
+  color: white;
 }
+
+.about_header {
+  line-height: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.about_paragraph {
+  margin-top: 0.5rem;
+}
+
+.about_list {
+  margin-top: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.button_container a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-primary);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid var(--color-primary);
+  margin-top: 1rem;
+  height: 2rem;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.download_icon {
+  margin-left: 0.5rem;
+  height: 1, 5rem;
+  width: 1.5rem;
+}
+
+.button_container a:hover {
+  transition: 0.5s;
+  background-color: white;
+  opacity: 0.85;
+}
+
+.count_container {
+  margin-top: 0.5rem;
+  background-color: var(--color-background);
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.count_years {
+  text-align: center;
+  padding: 0.5rem;
+  height: 7rem;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.count_projects {
+  text-align: center;
+  padding: 0.5rem;
+  height: 7rem;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.count_header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50%;
+}
+
+.count_paragraph {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50%;
 }
