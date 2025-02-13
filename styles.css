@@ -494,6 +494,7 @@ min-width: 100%;
 
 @media screen and (min-width:768px) {
  .about_skills__container {
+  padding: 0 2rem 0 2rem;
   height: 50rem;
   display: flex;
   justify-content: space-evenly;
@@ -521,6 +522,7 @@ flex-wrap: wrap;
   }
 
   .about_skills__container {
+    padding: 0 2.5rem 0 2.5rem;
     height: 14rem;
   }
  }
