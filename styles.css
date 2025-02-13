@@ -4,15 +4,30 @@
   box-sizing: border-box;
   --color-primary: #1b8d36;
   --color-background: black;
+  font-size: 62.5%;
 }
 html {
-  font-size: 62.5%;
   font-family: roboto;
   scroll-behavior: smooth;
 }
 
+
 body {
   background-color: var(--color-background);
+}
+
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 1rem;
+  background-color: var(--color-primary);
+}
+
+::-webkit-scrollbar-track{
+  background-color: var(--black);
 }
 
 /* Navigation bar */
@@ -271,12 +286,12 @@ button {
   }
 }
 
-/* About */
+/* About info */
 .about_container {
   padding: 0 1rem 0 1rem;
   margin-top: 2rem;
   min-width: 100%;
-  height: 30rem;
+  height: 27rem;
   color: white;
 }
 
@@ -374,6 +389,10 @@ button {
 
 @media screen and (min-width:768px) {
 
+.about_container {
+  height: 20rem;
+}
+
 .about_resp {
   margin-top: 2rem;
   display: flex;
@@ -435,3 +454,73 @@ button {
     font-size: 1.3rem;
   }
 }
+
+/* about skills */
+.about_skills__header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.about_skills__container {
+  height: 95rem;
+  min-width: 100%;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.software_container {
+  border-radius: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+  align-items: center;
+  height: 10rem;
+min-width: 100%;
+  background-color: rgb(34, 34, 34);
+}
+
+.software_img {
+  width: 50%;
+  height: 50%;
+}
+
+.software_knowledge_status {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media screen and (min-width:768px) {
+ .about_skills__container {
+  height: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+flex-wrap: wrap;
+ } 
+
+ .software_container {
+  min-width: 45%;
+ }
+}
+
+@media screen and (min-width:1024px) {
+  .software_container {
+    height: 10rem;
+  }
+
+  .about_skills__header {
+    font-size: 2.5rem;
+  }
+ }
+
+ @media screen and (min-width:1440px) {
+  .software_container {
+   min-width: 11%;
+  }
+
+  .about_skills__container {
+    height: 14rem;
+  }
+ }
